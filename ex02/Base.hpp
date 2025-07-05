@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Data.hpp                                           :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skock <skock@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/02 18:29:52 by skock             #+#    #+#             */
-/*   Updated: 2025/07/03 10:53:11 by skock            ###   ########.fr       */
+/*   Created: 2025/07/03 12:05:27 by skock             #+#    #+#             */
+/*   Updated: 2025/07/03 12:17:19 by skock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include <iostream>
-
-struct Data
+class Base
 {
-	std::string name;
-	int value;
+	public:
+		virtual ~Base() {};
+};
+
+class A : public Base
+{
+};
+
+class B : public Base
+{
+};
+
+class C : public Base 
+{
 };
